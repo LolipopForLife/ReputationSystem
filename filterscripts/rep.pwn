@@ -20,12 +20,12 @@ InitializeConnection()
   ConnHandle = mysql_connect(SERVER_HOST, SERVER_USER, SERVER_DATA, SERVER_PASS);
   if(mysql_errno(ConnHandle))
   {
-    printf("Sambungan koneksi ke \%s\ gagal, silahkan coba lain kali hehe.", SERVER_HOST);
+    printf("Sambungan koneksi ke %s gagal, silahkan coba lain kali hehe.", SERVER_HOST);
     print("Data cannot loading with this!");
   }
   else
   {
-    printf("Sambungan koneksi ke \%s\ berhasil, sekarang script akan di load!.", SERVER_HOST);
+    printf("Sambungan koneksi ke %s berhasil, sekarang script akan di load!.", SERVER_HOST);
     print("Script load successfully...");
   }
 }
