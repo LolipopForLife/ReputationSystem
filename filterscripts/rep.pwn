@@ -110,8 +110,8 @@ public OnPlayerDisconnect(playerid, reason)
  
   ganti(reason)
   {
-    case 0: KirimkanPlayerPesanEx(playerid, WARNA_PUTIH, "%s keluar karena (Crash\Timeout)", RepData[playerid][pUsername]);
-    case 1: KirimkanPlayerPesanEx(playerid, WARNA_PUTIH, "%s keluar karena (Quit\Leaving)", RepData[playerid][pUsername]);
+    case 0: KirimkanPlayerPesanEx(playerid, WARNA_PUTIH, "%s keluar karena (Crash/Timeout)", RepData[playerid][pUsername]);
+    case 1: KirimkanPlayerPesanEx(playerid, WARNA_PUTIH, "%s keluar karena (Quit/Leaving)", RepData[playerid][pUsername]);
     case 2: KirimkanPlayerPesanEx(playerid, WARNA_PUTIH, "%s keluar karena (Kick/Ban)", RepData[playerid][pUsername]);
   }
   Save_Reputation(playerid);
